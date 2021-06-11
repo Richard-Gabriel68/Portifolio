@@ -49,7 +49,39 @@ header a:hover
     color: #fff;
     background-color: #a5782f;
 }
-
+/*MENU -------------------------------*/
+aside
+{
+    display: flex;
+    top: 0;
+    right: -40vw;
+    position: fixed;
+    z-index: 999;
+    transition: all ease 0.5s;
+    display: none;
+}
+aside .menuopener
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 1rem;
+    margin-top: 0.7rem;
+}
+aside .trace
+{
+    background-color: rgb(0, 0, 0);
+    height: 8px;
+}
+aside .menu
+{
+    height: 100vh;
+    width: 40vw;
+    border-radius: 15px 0 0 15px;
+    background-color: aliceblue;
+}
 /*BANNER -----------------------------*/
 
 main .banner
@@ -116,44 +148,53 @@ main .tecno
 {
     padding: 4rem 0;
 }
-main .tecno h2
+main .sub
 {
     font-size: 40px;
     text-transform: uppercase;
 }
-main .tecnologias
+main .grupo
 { 
     margin-top: 1.5rem;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
-main .tecnologias .tec
+main .grupo .uni
 {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 3px 5px 9px #1d504d;
 
-    width: 25%;
+
     height: 200px;
     padding: 1rem;
+    margin: 0 1.7rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-main .tecnologias .tec:hover
+main .grupo .uni:hover
 {
     transition: all ease 0.5s;
     transform: scale(1.2);
 }
-main .tecnologias .tec i
+main .grupo .uni i
 {
     font-size: 50px;
     color: #e6a53f;
     margin-bottom: 0.5rem;
 }
-main .tecnologias .tec p
+main .grupo .uni p
 {
     margin-top: 1rem;
+}
+
+/*PROJETOS ------------------------------*/
+
+main .grupo .projeto h3
+{
+    align-self: center;
 }
 
 /*RESPONSIVE ----------------------------*/
@@ -187,6 +228,10 @@ main .tecnologias .tec p
     {
         display: none;
     }
+    main aside
+    {
+        display: flex;
+    }
     main .banner
     {
         margin-left: 0;
@@ -206,18 +251,19 @@ main .tecnologias .tec p
         margin: auto;
         margin-top: 2.5rem;
     }
-    main .tecnologias
+    main .grupo
     {
         display: flex;
         flex-direction: column;
     }
-    main .tecnologias .tec
+    main .grupo .uni
     {
         width: auto;
         height: auto;
-        margin-bottom: 1.5rem;
+        margin: 0;
+        margin-bottom: 1rem;
     }
-    main .tecnologias .tec:hover
+    main .grupo .uni:hover
     {
         transition: 0.5s;
         transform: scale(1.1);
