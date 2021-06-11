@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/557a9eecff.js" crossorigin="anonymous"></script>
+    <title>Meu Portifolio</title>
+</head>
+<body>
+    <header>
+        <h2>Portifolio</h2>
+        <nav>
+            <a href="#">Sobre mim</a>
+            <a href="#">Tecnologias</a>
+            <a href="#">Projetos</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <div onclick="menu.abrir()" class="menuopener">
+                <div class="trace"></div>
+                <div class="trace"></div>
+                <div class="trace"></div>
+            </div>
+
+            <div class="menu">
+                <a href="#sobremim">Sobre mim</a>
+                <a href="#tecno">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+            </div>
+        </aside>
+
+        <section class="banner">
+            <h1>Richard G. Dias</h1>
+            <h2>Front-end <br/>Developer</h2>
+            <div class="descricao">
+                <p>Sou um jovem de 18 anos apaixonado por tecnologia, aqui você irá descobrir um pouco mais sobre mim...</p>
+            </div>
+        </section>
+
+        <section id="sobremim" class="sobre">
+            <div class="cont">
+                <h1>Sobre mim</h1>
+                <p>Sou um jovem de 18 anos, moro em Franca, no estado de São Paulo. Tenho como meta melhorar um pouco cada dia e, atualmente, estou dedicando meu tempo no aprimoramento e aprendizagem de novas linguagens de programação.
+                <br>
+                Meu primeiro contato com a programação foi a 2 anos atrás em um curso de Montagem e Manuntenção de computadores, é... não são matérias muito proximas (risos), na época não fazia idéia de como aquela aula iria afetar minha vida.</p>
+            </div>
+        </section>
+
+        <section class="tecno" id="tecno">
+            <div class="cont">
+                <h2 class="sub">Tecnologias</h2>
+                <div class="tecnologias grupo">
+                    <div class="tec uni">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+                    </div>
+
+                    <div class="tec uni">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
+                    </div>
+
+                    <div class="tec uni">
+                        <i class="fab fa-js-square"></i>
+                        <h3>JavaScript</h3>
+                        <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pro" id="projetos">
+            <div class="cont">
+                <h2 class="sub">Projetos</h2>
+                <div class="projetos grupo">
+                    <div class="projeto uni">
+                        <img src="larrouse.png">
+                        <h3>Làrrouse</h3>
+                        <h3>(Não responsivo)</h3>
+                    </div>
+
+                    <div class="projeto uni">
+                        <img src="mare.png">
+                        <h3>Maré</h3>
+                    </div>
+                    
+                    <div class="projeto uni">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
