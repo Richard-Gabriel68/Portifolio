@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     background-image: linear-gradient(90deg, #fff, #49e6dd);
@@ -11,6 +15,13 @@ body
 a
 {
     text-decoration: none;
+}
+/*ANIMAÇÕES -------------------------*/
+
+@keyframes menu
+{
+    50%{transform: rotate(30deg)};
+    100%{transform: rotate(70deg);}
 }
 
 /*HEADER ----------------------------*/
@@ -69,6 +80,11 @@ aside .menuopener
     justify-content: space-around;
     margin-right: 1rem;
     margin-top: 0.7rem;
+
+    animation-name: menu;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: initial;
 }
 aside .trace
 {
@@ -80,7 +96,19 @@ aside .menu
     height: 100vh;
     width: 40vw;
     border-radius: 15px 0 0 15px;
-    background-color: aliceblue;
+    background-color: rgb(136, 172, 157);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside .menu a
+{
+    display: block;
+    color: #000;
+    font-weight: bold;
+    margin: 1rem 0;
 }
 /*BANNER -----------------------------*/
 
@@ -115,7 +143,6 @@ main .descricao
     font-weight: bold;
     margin-top: 5rem;
 }
-
 /*SOBRE -----------------------------*/
 
 main .sobre
