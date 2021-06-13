@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/557a9eecff.js" crossorigin="anonymous"></script>
-    <title>Meu Portifolio</title>
+    <title>Portifolio</title>
 </head>
 <body>
     <header>
         <h2>Portifolio</h2>
         <nav>
-            <a href="#">Sobre mim</a>
-            <a href="#">Tecnologias</a>
-            <a href="#">Projetos</a>
+            <a href="#sobremim">Sobre mim</a>
+            <a href="#tecno">Tecnologias</a>
+            <a href="#projetos">Projetos</a>
         </nav>
     </header>
 
@@ -28,9 +28,9 @@
             </div>
 
             <div class="menu">
-                <a href="#sobremim">Sobre mim</a>
-                <a href="#tecno">Tecnologias</a>
-                <a href="#projetos">Projetos</a>
+                <a onclick="menu.direcionar()" href="#sobremim">Sobre mim</a>
+                <a onclick="menu.direcionar()" href="#tecno">Tecnologias</a>
+                <a onclick="menu.direcionar()" href="#projetos">Projetos</a>
             </div>
         </aside>
 
@@ -40,6 +40,10 @@
             <div class="descricao">
                 <p>Sou um jovem de 18 anos apaixonado por tecnologia, aqui você irá descobrir um pouco mais sobre mim...</p>
             </div>
+            
+            <div class="ArrowArea">
+                <img src="down.png" alt="seta para baixo" class="arrow">
+            </div>
         </section>
 
         <section id="sobremim" class="sobre">
@@ -47,7 +51,7 @@
                 <h1>Sobre mim</h1>
                 <p>Sou um jovem de 18 anos, moro em Franca, no estado de São Paulo. Tenho como meta melhorar um pouco cada dia e, atualmente, estou dedicando meu tempo no aprimoramento e aprendizagem de novas linguagens de programação.
                 <br>
-                Meu primeiro contato com a programação foi a 2 anos atrás em um curso de Montagem e Manuntenção de computadores, é... não são matérias muito proximas (risos), na época não fazia idéia de como aquela aula iria afetar minha vida.</p>
+                Meu primeiro contato com a programação foi a 2 anos atrás em um curso de Montagem e Manuntenção de computadores, é... não são matérias muito proximas (hahaha), na época não fazia idéia de como aquela aula iria afetar minha vida.</p>
             </div>
         </section>
 
@@ -80,16 +84,16 @@
             <div class="cont">
                 <h2 class="sub">Projetos</h2>
                 <div class="projetos grupo">
-                    <div class="projeto uni">
-                        <img src="larrouse.png">
+                    <a href="https://larrouse-pizza.vercel.app/" target="_blank" class="projeto uni">
+                        <img src="larrouse1.png">
                         <h3>Làrrouse</h3>
                         <h3>(Não responsivo)</h3>
-                    </div>
+                    </a>
 
-                    <div class="projeto uni">
-                        <img src="mare.png">
+                    <a href="https://maare.vercel.app/" target="_blank" class="projeto uni">
+                        <img src="mare1.png">
                         <h3>Maré</h3>
-                    </div>
+                    </a>
                     
                     <div class="projeto uni">
 

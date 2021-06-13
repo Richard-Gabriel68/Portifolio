@@ -24,6 +24,12 @@ a
     100%{transform: rotate(70deg);}
 }
 
+@keyframes arrow
+{
+    0% {margin-top: 0;}
+    100% {margin-top: 10px}
+}
+
 /*HEADER ----------------------------*/
 
 header
@@ -143,13 +149,17 @@ main .descricao
     font-weight: bold;
     margin-top: 5rem;
 }
+main .ArrowArea
+{
+    display: none;
+}
 /*SOBRE -----------------------------*/
 
 main .sobre
 {
     background-color: #e6a53f;
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 5rem;
     padding: 4rem 0;
 }
 main .cont
@@ -193,7 +203,7 @@ main .grupo .uni
     box-shadow: 3px 5px 9px #1d504d;
 
 
-    height: 200px;
+    height: auto;
     padding: 1rem;
     margin: 0 1.7rem;
     margin-bottom: 1rem;
@@ -228,13 +238,13 @@ main .grupo .projeto h3
 
 @media (max-width: 800px)
 {
-    main .tecnologias
+    main .grupo
     {
         display: grid;
         grid-template-columns: auto auto;
         gap: 1rem;
     }
-    main .tecnologias .tec
+    main .grupo .uni
     {
         width: 30vw;
     }
@@ -277,6 +287,23 @@ main .grupo .projeto h3
         width: 70vw;
         margin: auto;
         margin-top: 2.5rem;
+    }
+    
+    main .ArrowArea
+    {
+        height: 30px;
+        width: 40px;
+        margin: auto;
+        margin-top: 1rem;
+        display: block;
+    }
+    main .ArrowArea .arrow
+    {
+        color: #1d504d;
+        height: 20px;
+        animation-name: arrow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
     }
     main .grupo
     {
