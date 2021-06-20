@@ -27,7 +27,7 @@ let menu =
 function seta()
 {
     document.querySelector(".ArrowArea").style.display="none";
-}
+};
 
 
 window.addEventListener("scroll", seta);

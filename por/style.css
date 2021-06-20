@@ -244,6 +244,46 @@ main .grupo .projeto h3
     align-self: center;
 }
 
+/*CONTATO -------------------------------*/
+
+footer .contatos
+{
+    background-color: grey;
+    width: 100vw;
+    height: 200px;
+
+    border-top: 2px solid #000 ;
+    margin-top:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .contatos .redes
+{
+    display: flex;
+    flex-direction: row;
+    color:#fff;
+}
+footer .contatos .redes .rede
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(54, 43, 21);
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+footer .contatos .redes .rede i
+{
+    font-size: 30px;
+    color: rgb(248, 171, 28);
+    margin-right: 0.5rem;
+}
+
 /*RESPONSIVE ----------------------------*/
 
 @media (max-width: 800px)
@@ -258,7 +298,18 @@ main .grupo .projeto h3
     {
         width: 30vw;
     }
-
+    footer .contatos .redes
+    {
+        flex-direction: column;
+    }
+    footer .contatos .redes .rede
+    {
+    
+        font-size: 16px;
+        margin: 0.3rem 1rem;
+        padding: 0.5rem;
+        
+    }
 }
 
 @media (max-width:600px)
