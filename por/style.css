@@ -236,6 +236,12 @@ main .grupo .uni p
 {
     margin-top: 1rem;
 }
+main .projetos .uni h3
+{
+    margin-top: 1rem;
+    color: #000;
+}
+
 
 /*PROJETOS ------------------------------*/
 
@@ -249,7 +255,7 @@ main .grupo .projeto h3
 footer .contatos
 {
     background-color: grey;
-    width: 100vw;
+    width: 100%;
     height: 200px;
 
     border-top: 2px solid #000 ;
@@ -286,7 +292,7 @@ footer .contatos .redes .rede i
 
 /*RESPONSIVE ----------------------------*/
 
-@media (max-width: 800px)
+@media (max-width: 950px)
 {
     main .grupo
     {
@@ -296,7 +302,7 @@ footer .contatos .redes .rede i
     }
     main .grupo .uni
     {
-        width: 30vw;
+        width: auto;
     }
     footer .contatos .redes
     {
