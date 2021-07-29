@@ -52,10 +52,10 @@ header nav
 header a
 {
     display: block;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 0.6rem;
-    color: black;
+    border: 1px solid #21494e;
+    border-radius: 19px;
+    padding: 0.7rem;
+    color: #424139;
     font-weight: bold;
     margin: 0 15px;
 
@@ -65,6 +65,7 @@ header a:hover
     transition: all ease 1s;
     color: #fff;
     background-color: #a5782f;
+    border: 1px solid #a5782f;
 }
 /*MENU -------------------------------*/
 aside
