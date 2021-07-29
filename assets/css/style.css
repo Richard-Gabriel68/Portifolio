@@ -62,7 +62,7 @@ header a
 }
 header a:hover
 {
-    transition: all ease 1s;
+    transition: all ease 0.9s;
     color: #fff;
     background-color: #a5782f;
     border: 1px solid #a5782f;
