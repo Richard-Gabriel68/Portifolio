@@ -1,75 +1,61 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
-}
-html
-{
+} 
+html {
     scroll-behavior: smooth;
 }
-body
-{
+body {
     background-image: linear-gradient(90deg, #fff, #49e6dd);
     font-family: 'Rubik', sans-serif;
 }
-a
-{
+a {
     text-decoration: none;
 }
 /*ANIMAÇÕES -------------------------*/
 
-@keyframes menu
-{
+@keyframes menu {
     50%{transform: rotate(30deg)};
     100%{transform: rotate(70deg);}
 }
 
-@keyframes arrow
-{
+@keyframes arrow {
     0% {margin-top: 0;}
     100% {margin-top: 10px}
 }
 
 /*HEADER ----------------------------*/
 
-header
-{
+header {
     top:0;
     width: 100%;
     height: 60px;
-    background-color: #e6a53f;
+    background-color: #e6a63f;
 
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-header nav
-{
+} 
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-header a
-{
-    display: block;
-    border: 1px solid #21494e;
-    border-radius: 19px;
+header a {
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: 0 0 5px rgb(139, 121, 86);
     padding: 0.7rem;
     color: #424139;
     font-weight: bold;
     margin: 0 15px;
 
 }
-header a:hover
-{
+header a:hover {
     transition: all ease 0.9s;
-    color: #fff;
-    background-color: #a5782f;
-    border: 1px solid #a5782f;
 }
 /*MENU -------------------------------*/
-aside
-{
+aside {
     display: flex;
     top: 0;
     right: -40vw;
@@ -78,8 +64,7 @@ aside
     transition: all ease 0.5s;
     display: none;
 }
-aside .menuopener
-{
+aside .menuopener {
     width: 40px;
     height: 40px;
     display: flex;
@@ -93,13 +78,11 @@ aside .menuopener
     animation-delay: 1.5s;
     animation-iteration-count: initial;
 }
-aside .trace
-{
+aside .trace {
     background-color: rgb(0, 0, 0);
     height: 8px;
 }
-aside .menu
-{
+aside .menu {
     height: 100vh;
     width: 40vw;
     border-radius: 15px 0 0 15px;
@@ -110,15 +93,13 @@ aside .menu
     align-items: center;
     justify-content: center;
 }
-aside .menu a
-{
+aside .menu a {
     display: block;
     color: #000;
     font-weight: bold;
     margin: 1rem 0;
 }
- body .shadow
- {
+body .shadow {
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.700);
@@ -129,86 +110,87 @@ aside .menu a
  }
 /*BANNER -----------------------------*/
 
-main .banner
-{
-    margin-left: 2rem;
-    margin-top: 4rem;
-    width: auto;
+main .banner {
+    display: flex;
+    height: calc(100vh - 60px);
 }
-
-main .banner h1
-{
-    font-size: 50px;
-    font-weight: 800;
-    text-transform: uppercase;
+main .banner .left-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff1c6;
 }
-main .banner h2
-{
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 1.5rem;
-    margin-left: 1.7rem;
+main .banner .right-side {
+    flex: 1;
+    background-image: url("../img/img9.png");
+    background-position: center;
+    background-size: cover;
 }
-main .descricao 
-{
-    width: 30vw;
-    padding: 3rem 1.5rem;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 3px 5px 9px #1d504d;
+.left-side .profession {
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 5rem;
+    text-transform: uppercase;
 }
-main .ArrowArea
-{
-    display: none;
+.left-side .name {
+    font-size: 75px;
+    font-weight: bold;
+    margin: 20px 0 40px 0;
+}
+.left-side .buttons a {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #384450;
+    margin: 0 10px 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #536d6d;
+}
+.left-side .buttons a.light {
+    background-color: #50b9b4;
+    color: #000;
+}
+.left-side .buttons a:hover {
+    opacity: 0.7;
 }
 /*SOBRE -----------------------------*/
 
-main .sobre
-{
+main .sobre {
     background-color: #e6a53f;
     width: 100%;
-    margin-top: 5rem;
     padding: 4rem 0;
 }
-main .cont
-{
+main .cont {
     width: 75%;
     margin: auto;
 }
-main .sobre .cont h1
-{
+main .sobre .cont h1 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 2rem;
 }
-main .sobre .cont p
-{
+main .sobre .cont p {
     text-align: justify;
 }
 
 /*TECNO -----------------------------*/
-main .tecno
-{
+main .tecno {
     padding: 4rem 0;
 }
-main .sub
-{
+main .sub {
     font-size: 40px;
     text-transform: uppercase;
 }
-main .grupo
-{ 
+main .grupo { 
     margin-top: 1.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-main .grupo .uni
-{
+main .grupo .uni {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 3px 5px 9px #1d504d;
@@ -222,23 +204,19 @@ main .grupo .uni
     flex-direction: column;
     align-items: center;
 }
-main .grupo .uni:hover
-{
+main .grupo .uni:hover {
     transition: all ease 0.5s;
     transform: scale(1.2);
 }
-main .grupo .uni i
-{
+main .grupo .uni i {
     font-size: 50px;
     color: #e6a53f;
     margin-bottom: 0.5rem;
 }
-main .grupo .uni p
-{
+main .grupo .uni p {
     margin-top: 1rem;
 }
-main .projetos .uni h3
-{
+main .projetos .uni h3 {
     margin-top: 1rem;
     color: #000;
 }
@@ -337,41 +315,26 @@ footer .contatos .redes .rede i
     {
         display: flex;
     }
-    main .banner
-    {
-        margin-left: 0;
+    main .banner {
+        flex-direction: column;
     }
-    main .banner h1, h2
-    {
+    main .banner .left-side {
+        flex: 1;
         text-align: center;
+        padding: 10px 20px;
     }
-    main .banner h2
-    {
-        margin-left: 0;
-        font-size: 30px;
+    main .banner .right-side {
+        flex: 2;
     }
-    main .banner .descricao
-    {
-        width: 70vw;
-        margin: auto;
-        margin-top: 2.5rem;
+    .left-side .name {
+        font-size: 50px;
+        margin: 10px 0 15px 0;
     }
-    
-    main .ArrowArea
-    {
-        height: 30px;
-        width: 40px;
-        margin: auto;
-        margin-top: 1rem;
-        display: block;
+    .left-side .buttons {
+        display: flex; 
     }
-    main .ArrowArea .arrow
-    {
-        color: #1d504d;
-        height: 20px;
-        animation-name: arrow;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
+    .left-side .buttons a {
+        font-size: 14px;
     }
     main .grupo
     {
@@ -391,4 +354,13 @@ footer .contatos .redes .rede i
         transform: scale(1.1);
     }
 
+}
+@media (max-width:400px) {
+    .left-side .buttons {
+        display: flex; 
+        flex-direction: column;
+    }
+    .left-side .buttons a {
+        font-size: 14px;
+    }
 }
