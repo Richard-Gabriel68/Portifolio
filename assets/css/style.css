@@ -272,6 +272,9 @@ footer .contatos .redes .rede i
 
 @media (max-width: 950px)
 {
+    main .banner .left-side .name {
+        font-size: 10px;
+    }
     main .grupo
     {
         display: grid;
@@ -321,9 +324,6 @@ footer .contatos .redes .rede i
         flex: 1;
         text-align: center;
         padding: 10px 20px;
-    }
-    main .banner .left-side .name {
-        font-size: 10px;
     }
     main .banner .right-side {
         flex: 2;
