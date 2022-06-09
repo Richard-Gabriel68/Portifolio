@@ -316,6 +316,7 @@ footer .contatos .redes .rede i
     }
     main .banner {
         flex-direction: column;
+        font-size: 10px;
     }
     main .banner .left-side {
         flex: 1;
